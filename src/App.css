@@ -1,0 +1,109 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f5f7fa;
+}
+
+.app-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.app-header h1 {
+  margin: 0 0 10px 0;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.tagline {
+  margin: 0;
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+.app-nav {
+  background: white;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.app-nav button {
+  padding: 12px 24px;
+  border: 2px solid #ddd;
+  background: white;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: #2c3e50;
+}
+
+.app-nav button:hover {
+  border-color: #667eea;
+  color: #667eea;
+}
+
+.app-nav button.active {
+  background: #667eea;
+  color: white;
+  border-color: #667eea;
+}
+
+.app-main {
+  flex: 1;
+  padding: 20px;
+}
+
+.app-footer {
+  background: white;
+  border-top: 1px solid #ddd;
+  padding: 15px 20px;
+  margin-top: auto;
+}
+
+.status-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  font-size: 14px;
+  color: #7f8c8d;
+}
+
+.status-online {
+  color: #27ae60;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .app-header h1 {
+    font-size: 24px;
+  }
+  
+  .tagline {
+    font-size: 14px;
+  }
+  
+  .app-nav {
+    flex-direction: column;
+  }
+  
+  .app-nav button {
+    width: 100%;
+  }
+  
+  .status-bar {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
