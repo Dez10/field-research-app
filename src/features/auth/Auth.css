@@ -72,6 +72,15 @@
   font-size: 14px;
 }
 
+.auth-card .success-message {
+  background: #efe;
+  color: #3c3;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
 .auth-card .btn-primary {
   width: 100%;
   padding: 14px;

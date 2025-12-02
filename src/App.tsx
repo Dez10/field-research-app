@@ -4,6 +4,7 @@ import { AuthProvider } from './contexts/AuthContext';
 import { ProtectedRoute } from './components/ProtectedRoute';
 import { Login } from './features/auth/Login';
 import { Register } from './features/auth/Register';
+import { ResetPassword } from './features/auth/ResetPassword';
 import { Dashboard } from './pages/Dashboard';
 import './index.css';
 
@@ -24,6 +25,7 @@ function App() {
           <Routes>
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
+            <Route path="/reset-password" element={<ResetPassword />} />
             <Route
               path="/dashboard"
               element={
